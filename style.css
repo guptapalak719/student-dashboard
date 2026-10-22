@@ -1,0 +1,203 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fb;
+  color: #24243a;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+}
+
+.page-header,
+.records-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(26px, 4vw, 36px);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.eyebrow {
+  color: #6656c8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.subtitle {
+  color: #77788b;
+  line-height: 1.5;
+}
+
+.total-card,
+.panel {
+  background: white;
+  border: 1px solid #e8e8f0;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.total-card {
+  min-width: 175px;
+}
+
+.total-card span {
+  display: block;
+  color: #77788b;
+  font-size: 13px;
+}
+
+.total-card strong {
+  display: block;
+  font-size: 30px;
+  margin-top: 10px;
+  color: #6656c8;
+}
+
+.panel {
+  margin-top: 24px;
+  box-shadow: 0 4px 16px rgba(30, 30, 70, 0.03);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #dedee9;
+  border-radius: 8px;
+  font-size: 14px;
+  outline-color: #7766d7;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #6656c8;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5142ac;
+}
+
+.records-header {
+  margin-bottom: 20px;
+}
+
+.records-header input {
+  max-width: 320px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #ededf3;
+  font-size: 14px;
+}
+
+th {
+  background: #f8f8fc;
+  color: #66667b;
+}
+
+.delete-btn {
+  margin: 0;
+  padding: 8px 11px;
+  background: #fff0f0;
+  color: #bd3030;
+}
+
+.delete-btn:hover {
+  background: #ffe0e0;
+}
+
+#formMessage {
+  font-size: 14px;
+}
+
+#emptyMessage {
+  padding: 18px 0;
+  color: #77788b;
+  text-align: center;
+}
+
+footer {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #89899b;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 22px auto;
+  }
+
+  .page-header,
+  .records-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .total-card {
+    min-width: 0;
+  }
+
+  .records-header input {
+    max-width: none;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "email": "aarav@example.com",
+    "course": "MCA"
+  },
+  {
+    "id": 2,
+    "name": "Priya Singh",
+    "email": "priya@example.com",
+    "course": "BCA"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Verma",
+    "email": "rahul@example.com",
+    "course": "B.Tech"
+  },
+  {
+    "id": 4,
+    "name": "Neha Gupta",
+    "email": "neha@example.com",
+    "course": "MCA"
+  }
+]

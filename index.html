@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">STUDENT MANAGEMENT</p>
+        <h1>Student Dashboard</h1>
+        <p class="subtitle">Manage your student records in one place.</p>
+      </div>
+      <div class="total-card">
+        <span>Total visible students</span>
+        <strong id="studentCount">0</strong>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>Add a student</h2>
+
+      <form id="studentForm">
+        <div class="form-grid">
+          <label>
+            Full name
+            <input id="name" name="name" type="text"
+              placeholder="Enter student name" required>
+          </label>
+
+          <label>
+            Email address
+            <input id="email" name="email" type="email"
+              placeholder="student@example.com" required>
+          </label>
+
+          <label>
+            Course
+            <input id="course" name="course" type="text"
+              placeholder="e.g. MCA" required>
+          </label>
+        </div>
+
+        <button type="submit">Add student</button>
+        <p id="formMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="records-header">
+        <div>
+          <h2>Student records</h2>
+          <p class="subtitle">View, search and manage students.</p>
+        </div>
+
+        <input id="searchInput" type="search"
+          placeholder="Search by name or course..."
+          aria-label="Search by name or course">
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="studentTableBody"></tbody>
+        </table>
+      </div>
+
+      <p id="emptyMessage" hidden></p>
+    </section>
+
+    <footer>
+      Student Dashboard · Built with HTML, CSS and JavaScript
+    </footer>
+  </main>
+</body>
+</html>
